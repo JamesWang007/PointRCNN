@@ -14,7 +14,7 @@ parser.add_argument('--class_name', type=str, default='Car')
 parser.add_argument('--split', type=str, default='train')
 args = parser.parse_args()
 
-
+ 
 class GTDatabaseGenerator(KittiDataset):
     def __init__(self, root_dir, split='train', classes=args.class_name):
         super().__init__(root_dir, split=split)
