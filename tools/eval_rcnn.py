@@ -492,7 +492,7 @@ def eval_one_epoch_joint(model, dataloader, epoch_id, result_dir, logger):
         input_data = {'pts_input': inputs}
 
         # model inference
-        ret_dict = model(input_data)
+        ret_dict = model(input_data, sample_id) # changed by James
 
         roi_scores_raw = ret_dict['roi_scores_raw']  # (B, M)
         roi_boxes3d = ret_dict['rois']  # (B, M, 7)

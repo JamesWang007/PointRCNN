@@ -179,6 +179,8 @@ __C.TEST.RPN_POST_NMS_TOP_N = 300
 __C.TEST.RPN_NMS_THRESH = 0.7
 __C.TEST.RPN_DISTANCE_BASED_PROPOSE = True
 
+__C.FUSSION = edict()
+__C.FUSSION.FRUSTUM_AVAILABLE = True
 
 def cfg_from_file(filename):
     """Load a config file and merge it into the default options."""
